@@ -10,13 +10,15 @@ module.exports = {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
       { src: '/__/firebase/5.4.2/firebase-app.js', body: true },
       { src: '/__/firebase/init.js', body: true }
-    ]
+    ],
   },
+  css: [
+    '@/assets/sass/project.scss'
+  ],
   /*
   ** Customize the progress bar color
   */

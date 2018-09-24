@@ -1,65 +1,62 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        hosonokotaro
-      </h1>
-      <h2 class="subtitle">
-        
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+  <article class="l-article">
+    <div class="p-fv">
+      <p>東京都北区。北の玄関口と言われるこの街は、戦後の労働者たちが犇めき合う、経済の坩堝のような街であった。<br>
+      <br>
+      北は鋳物の街、川口の工業地帯、区内は巨大印刷工場。労働者たちは夜勤明けに、赤羽の飲み屋街に集まり酒を飲んだという。</p>
     </div>
-  </section>
+    <section class="p-sect">
+      <h2>A DAY</h2>
+      <p>twitter</p>
+    </section>
+    <section class="p-sect">
+      <h2>PICTURE</h2>
+      <p>insta</p>
+    </section>
+  </article>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-
 export default {
-  components: {
-    AppLogo
-  }
+  // directives: {
+  //   scroll: {
+  //     bind: (el) => {
+  //       function f() {
+  //         if(el.getBoundingClientRect().top === 0) {
+  //           el.classList.add('is-top');
+  //         } else {
+  //           el.classList.remove('is-top');
+  //         }
+  //       }
+
+  //       window.addEventListener('scroll', f);
+  //     }
+  //   }
+  // }
 }
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+<style lang="scss" scoped>
+
+.p-fv {
+  p {
+    color: #fff;
+  }
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+p {
+  padding: 40px 40px 0 40px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+// .sticky {
+//   position: sticky;
+//   top: 0px;
+//   background: #f66;
+//   color: #fff;
+//   &.is-top {
+//     opacity: 0.5;
+//   }
+// }
 
-.links {
-  padding-top: 15px;
-}
 </style>
-
