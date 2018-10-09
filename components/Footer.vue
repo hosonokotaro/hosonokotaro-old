@@ -1,5 +1,5 @@
 <template>
-  <footer class="l-footer">
+  <footer>
     <div class="txt">&copy;{{ years() }} HOSONO KOTARO</div>
   </footer>
 </template>
@@ -17,7 +17,13 @@ export default {
 
 
 <style scoped>
+  footer {
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+  }
   .txt {
     text-align: center;
+    color: #999;
   }
 </style>

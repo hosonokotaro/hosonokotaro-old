@@ -14,10 +14,22 @@
 
 <style lang="scss" scoped>
 
+h2 {
+  & + dl {
+    padding-top: 40px;
+  }
+}
+
 dl {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 0 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px 20px;
+  padding: 0 40px;
+}
+
+dt {
+  font-weight: bold;
+  text-align: right;
 }
 
 </style>

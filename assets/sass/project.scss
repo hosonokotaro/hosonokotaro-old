@@ -1,11 +1,11 @@
 @import 'foundation';
 @import 'layout';
+@import 'component';
 
 .p-fv {
-    background: #444;
+    background: #333;
 }
 
 .p-sect {
-    padding-bottom: 40px;
-    background: #f9f9f9;
+    padding: 40px 0;
 }
