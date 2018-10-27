@@ -4,7 +4,7 @@
       <h2>ABOUT</h2>
       <figure>
         <picture>
-          <source media="(min-width: 768px)" srcset="~/assets/img/pic_hosono.jpg">
+          <source media="(min-width: 768px)" srcset="~/assets/img/pic_hosono.jpg 2x">
           <source srcset="~/assets/img/pic_hosono.jpg 2x">
           <img src="~/assets/img/pic_hosono.jpg" alt="細野">
         </picture>
@@ -35,11 +35,18 @@ figure {
     height: calc(100vw - 80px);
     object-fit: cover;
     border-radius: 100%;
+    @media screen and (min-width: 768px) {
+      width: 500px;
+      height: 500px;
+    }
   }
   .c-box-hukidasi {
     top: 15%;
     right: 10%;
     transform: rotate(8deg);
+    @media screen and (min-width: 768px) {
+      right: calc(50% - 250px);
+    }
   }
   & + p {
     padding-top: 40px;

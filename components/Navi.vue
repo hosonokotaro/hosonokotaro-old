@@ -2,11 +2,22 @@
   <nav>
     <ul>
       <li><nuxt-link to="/works">WORKS</nuxt-link></li>
-      <li><nuxt-link to="/contact">CONTACT</nuxt-link></li>
       <li><nuxt-link to="/about">ABOUT</nuxt-link></li>
+      <li><a :href="mail">CONTACT</a></li>
     </ul>
   </nav>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      mail: 'mailto:hosono1985@gmail.com'
+    }
+  }
+}
+</script>
+
 
 <style lang="scss" scoped>
   nav {

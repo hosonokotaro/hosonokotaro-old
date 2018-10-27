@@ -3,7 +3,7 @@
     <div class="p-fv">
       <figure>
         <picture>
-          <source media="(min-width: 768px)" srcset="~/assets/img/pic_kitaku.png">
+          <source media="(min-width: 768px)" srcset="~/assets/img/pic_kitaku.png 2x">
           <source srcset="~/assets/img/pic_kitaku.png 2x">
           <img src="~/assets/img/pic_kitaku.png" alt="北区">
         </picture>
@@ -16,12 +16,10 @@
       北区は私にとって、社会と接点を持つ最初の土地なのである。</p>
     </div>
     <section class="p-sect">
-      <h2>A DAY</h2>
-      <p>twitter</p>
-    </section>
-    <section class="p-sect">
-      <h2>PICTURE</h2>
-      <p>insta</p>
+      <h2>twitter</h2>
+      <p>
+        <a class="twitter-timeline" data-height="667" data-theme="light" href="https://twitter.com/hosono_fe?ref_src=twsrc%5Etfw">Tweets by hosono_fe</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </p>
     </section>
   </article>
 </template>
@@ -46,7 +44,7 @@ figure {
 }
 
 p {
-  padding: 0 40px 40px 40px;
+  padding: 0 40px;
 }
 
 </style>

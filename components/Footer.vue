@@ -18,12 +18,11 @@ export default {
 
 <style scoped>
   footer {
-    padding: 1rem;
-    background: #333;
-    color: #fff;
+    padding: 20px 0;
+    border-top: 1px solid #333;
   }
   .txt {
     text-align: center;
-    color: #999;
+    color: #000;
   }
 </style>
