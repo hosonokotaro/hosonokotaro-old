@@ -20,7 +20,10 @@
       <br>
       大手企業などのサイトを受託案件として多数手がける。個人としては、アニメーション制作会社、個人経営の本屋さんのサイトも手がける。<br>
       <br>
-      座右の銘は「<ruby>色即是空<rt>しきそくぜくう</rt></ruby>」</p>
+      座右の銘は「<ruby>色即是空<rt>しきそくぜくう</rt></ruby>」<br>
+      <br>
+      <a href="https://twitter.com/hosono_fe?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="ja" data-show-count="false">Follow @hosono_fe</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </p>
     </section>
   </article>
 </template>

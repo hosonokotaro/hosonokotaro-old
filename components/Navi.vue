@@ -1,6 +1,7 @@
 <template>
   <nav>
     <ul>
+      <li><nuxt-link to="/">TOP</nuxt-link></li>
       <li><nuxt-link to="/works">WORKS</nuxt-link></li>
       <li><nuxt-link to="/about">ABOUT</nuxt-link></li>
       <li><a :href="mail">CONTACT</a></li>
@@ -24,6 +25,7 @@ export default {
     position: sticky;
     top: 0;
     z-index: 1;
+    border-bottom: 1px solid #333;
   }
   ul {
     display: flex;
@@ -49,5 +51,8 @@ export default {
         content: '';
       }
     }
+  }
+  .nuxt-link-exact-active {
+    color: #000;
   }
 </style>

@@ -12,26 +12,44 @@
       <ul>
         <li>赤羽の絵本屋さんの<a href="http://www.aoneko-shobou.jp" target="_blank">webサイト</a></li>
       </ul>
+      <h3 v-if="isRepos">REPOS</h3>
+      <ul v-if="isRepos">
+        <li><a href="https://github.com/hosonokotaro" target="_blank">GitHub</a></li>
+      </ul>
     </section>
   </article>
 </template>
 
-<style scoped>
+<script>
+export default {
+  data() {
+    return {
+      isRepos: false
+    }
+  }
+}
+</script>
+
+
+<style lang="scss" scoped>
 
 img {
   max-width: 100%;
 }
 
 ul {
-  padding: 40px 40px 0 40px;
+  padding: 20px 40px 0 40px;
+
+  & + h3 {
+  padding-top: 40px;
 }
 
-li + li {
-  padding-top: 5px;
 }
 
-ul + h3 {
-  padding-top: 20px;
+li {
+  & + li {
+    padding-top: 5px;
+  }
 }
 
 </style>
