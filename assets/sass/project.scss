@@ -6,4 +6,9 @@
     max-width: 768px;
     margin: 0 auto;
     padding: 40px 0 80px 0;
+    & + .p-sect {
+        padding-top: 0;
+    }
 }
+
+@import 'utility';

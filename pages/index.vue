@@ -18,10 +18,19 @@
       </div>
     </div>
     <section class="p-sect">
+      <h2>Speak</h2>
+      <ul class="c-list">
+        <li>
+          <span class="u-mark">Qiita</span><a href="https://qiita.com/hosono" target="_blank">https://qiita.com/hosono</a>
+        </li>
+      </ul>
+    </section>
+    <section class="p-sect">
       <h2>twitter</h2>
       <div class="area-twitter">
         <div class="wrap-twitter">
-          <a class="twitter-timeline" data-lang="ja" data-height="667" data-theme="light" href="https://twitter.com/hosono_fe?ref_src=twsrc%5Etfw">Tweets by hosono_fe</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-lang="ja" data-height="667" data-theme="light" href="https://twitter.com/hosono_fe?ref_src=twsrc%5Etfw">Tweets by hosono_fe</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
     </section>
@@ -29,7 +38,6 @@
 </template>
 
 <style lang="scss" scoped>
-
 .area-fv {
   padding-bottom: 40px;
   background: #333;
@@ -37,11 +45,17 @@
     padding-top: 40px;
   }
   p {
-      color: #fff;
+    color: #fff;
   }
   .inner {
     max-width: 768px;
     margin: 0 auto;
+  }
+}
+
+.u-mark {
+  & + a {
+    margin-left: 5px;
   }
 }
 
@@ -57,20 +71,21 @@ p {
   padding: 0 40px;
 }
 
+h3 {
+  & + p {
+    padding-top: 20px;
+  }
+}
+
 .area-twitter {
   padding: 0 40px;
   text-align: center;
 }
 
 .wrap-twitter {
-  display: inline-block;
-  width: 100%;
-  max-width: 500px;
 }
-
 </style>
 
 <script>
-export default {
-}
+export default {};
 </script>

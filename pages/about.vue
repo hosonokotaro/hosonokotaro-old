@@ -11,7 +11,7 @@
         <div class="c-box-hukidasi">
           <span>とても眩しいです</span>
         </div>
-        <figcaption>富士山山頂にて</figcaption>
+        <figcaption class="u-mark">富士山山頂にて</figcaption>
       </figure>
       <p><ruby>細野<rt>ほその</rt></ruby><ruby>広太郎<rt>こうたろう</rt></ruby><br>
       1985年生まれ<br>
