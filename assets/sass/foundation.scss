@@ -26,10 +26,6 @@ h2 {
   font-style: italic;
 }
 
-p {
-  line-height: 1.6em;
-}
-
 h3 {
   font-size: 1.4rem;
 }
@@ -46,6 +42,7 @@ a {
 
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 button {

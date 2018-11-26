@@ -2,19 +2,25 @@
   <article class="l-article">
     <div class="area-fv">
       <div class="inner">
-        <figure>
+        <figure class="box-fig">
           <picture>
             <source media="(min-width: 768px)" srcset="~/assets/img/pic_kitaku.png">
             <source srcset="~/assets/img/pic_kitaku.png 2x">
             <img src="~/assets/img/pic_kitaku.png" alt="北区">
           </picture>
         </figure>
-        <p>東京都北区。北の玄関口と言われるこの街は、戦後の労働者たちがひしめき合う、復興の坩堝であった。<br>
-        <br>
-        北は鋳物の街、川口の工業地帯、区内は巨大印刷工場。労働者たちは夜勤明けに、赤羽の飲み屋街に集まり酒を飲んだという。<br>
-        <br>
-        私の祖父、父は北区で生活をし、私もまた、北区で生まれ育った。<br>
-        北区は私にとって、社会と接点を持つ最初の土地なのである。</p>
+        <h2 class="txt-ttl">
+          <picture>
+            <source media="(min-width: 768px)" srcset="~/assets/img/txt_kitaku_ttl.png">
+            <source srcset="~/assets/img/txt_kitaku_ttl.png 2x">
+            <img src="~/assets/img/txt_kitaku_ttl.png" alt="東京都北区赤羽">
+          </picture>
+        </h2>
+        <p class="box-caption">
+          <span class="txt">東京都北区赤羽、北の玄関口。</span>
+          <span class="txt">戦後の労働者たちは夜勤明けに、赤羽の飲み屋街に集まり酒を飲んだという。</span>
+          <span class="txt">私は、そんな粗野な印象を残す街で、親子三世代に渡って生活をしている。</span>
+        </p>
       </div>
     </div>
     <section class="p-sect">
@@ -38,52 +44,82 @@
 </template>
 
 <style lang="scss" scoped>
+
 .area-fv {
-  padding-bottom: 40px;
-  background: #333;
-  & + .p-sect {
-    padding-top: 40px;
+  padding: 40px;
+  text-align: center;
+  background: url(~/assets/img/pic_kitaku_bg.jpg) no-repeat;
+  background-size: cover;
+  .box-fig {
   }
-  p {
-    color: #fff;
+  .txt-ttl {
+    +.box-caption {
+      padding-top: 30px;
+    }
   }
-  .inner {
-    max-width: 768px;
+  .box-caption {
+    max-width: calc(590px / 2);
     margin: 0 auto;
+    text-align: left;
+    color: #fff;
+    line-height: 1.8;
+    .txt {
+      display: block;
+      +.txt {
+        padding-top: 20px;
+      }
+    }
   }
 }
 
-.u-mark {
-  & + a {
-    margin-left: 5px;
-  }
-}
 
-figure {
-  padding-top: 20px;
-  text-align: center;
-  & + p {
-    padding-top: 20px;
-  }
-}
+// .area-fv {
+//   padding-bottom: 40px;
+//   background: #333;
+//   & + .p-sect {
+//     padding-top: 40px;
+//   }
+//   p {
+//     color: #fff;
+//   }
+//   .inner {
+//     max-width: 768px;
+//     margin: 0 auto;
 
-p {
-  padding: 0 40px;
-}
+//   }
+// }
 
-h3 {
-  & + p {
-    padding-top: 20px;
-  }
-}
+// .u-mark {
+//   & + a {
+//     margin-left: 5px;
+//   }
+// }
 
-.area-twitter {
-  padding: 0 40px;
-  text-align: center;
-}
+// figure {
+//   padding-top: 20px;
+//   text-align: center;
+//   +p {
+//     padding-top: 20px;
+//   }
+// }
 
-.wrap-twitter {
-}
+// p {
+//   padding: 0 40px;
+// }
+
+// h3 {
+//   & + p {
+//     padding-top: 20px;
+//   }
+// }
+
+// .area-twitter {
+//   padding: 0 40px;
+//   text-align: center;
+// }
+
+// .wrap-twitter {
+// }
 </style>
 
 <script>

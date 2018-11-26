@@ -1,6 +1,11 @@
 @import 'foundation';
-@import 'layout';
 @import 'component';
+
+.p-project {
+    // max-width: 768px;
+    margin: 0 auto;
+}
+
 
 .p-sect {
     max-width: 768px;
