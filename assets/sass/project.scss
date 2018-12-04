@@ -1,19 +1,30 @@
-@import 'foundation';
-@import 'component';
+@import 'reboot';
 
-.p-project {
-    // max-width: 768px;
-    margin: 0 auto;
+// foundation
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin-bottom: 0;
 }
 
-
-.p-sect {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 40px 0 80px 0;
-    & + .p-sect {
-        padding-top: 0;
-    }
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-@import 'utility';
+a {
+  text-decoration: none;
+  color: #39f;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+// utility
+
+.u-mark {
+  padding: 0.3em;
+  background: #333;
+  color: #fff;
+}

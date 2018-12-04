@@ -4,9 +4,9 @@
       <h2>ABOUT</h2>
       <figure>
         <picture>
-          <source media="(min-width: 768px)" srcset="~/assets/img/pic_hosono.jpg 2x">
-          <source srcset="~/assets/img/pic_hosono.jpg 2x">
-          <img src="~/assets/img/pic_hosono.jpg" alt="細野">
+          <source media="(min-width: 768px)" srcset="/img/pic_hosono.jpg 2x">
+          <source srcset="/img/pic_hosono.jpg 2x">
+          <img src="/img/pic_hosono.jpg" alt="細野">
         </picture>
         <div class="c-box-hukidasi">
           <span>とても眩しいです</span>

@@ -1,19 +1,72 @@
 <template>
   <nav>
     <ul>
-      <li><nuxt-link to="/">TOP</nuxt-link></li>
-      <li><nuxt-link to="/works">WORKS</nuxt-link></li>
-      <li><nuxt-link to="/about">ABOUT</nuxt-link></li>
-      <li><a :href="mail">CONTACT</a></li>
+      <li>
+        <nuxt-link to="/">
+          <picture>
+            <source media="(min-width: 768px)" :srcset="topImagePath">
+            <source :srcset="topImagePath + ' 2x'">
+            <img :src="topImagePath" alt="TOP">
+          </picture>
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/work">
+          <picture>
+            <source media="(min-width: 768px)" :srcset="workImagePath">
+            <source :srcset="workImagePath + ' 2x'">
+            <img :src="workImagePath" alt="WORK">
+          </picture>
+        </nuxt-link>
+      </li>
+      <li>
+        <a :href="mail">
+          <picture>
+            <source media="(min-width: 768px)" :srcset="contactImagePath">
+            <source :srcset="contactImagePath + ' 2x'">
+            <img :src="contactImagePath" alt="CONTACT">
+          </picture>
+        </a>
+      </li>
     </ul>
   </nav>
 </template>
 
 <script>
+const imgTop = require('~/assets/img/txt_nav_top.png');
+const imgTopActive = require('~/assets/img/txt_nav_top_active.png');
+const imgWork = require('~/assets/img/txt_nav_work.png');
+const imgWorkActive = require('~/assets/img/txt_nav_work_active.png');
+const imgContact = require('~/assets/img/txt_nav_contact.png');
+const imgContactActive = require('~/assets/img/txt_nav_contact_active.png');
+
 export default {
   data() {
     return {
-      mail: 'mailto:hosono1985@gmail.com'
+      mail: 'mailto:hosono1985@gmail.com',
+    }
+  },
+  computed: {
+    topImagePath() {
+      if(this.$route.name !== 'index') {
+        return imgTop
+      } else {
+        return imgTopActive
+      }
+    },
+    workImagePath() {
+      if(this.$route.name !== 'work') {
+        return imgWork
+      } else {
+        return imgWorkActive
+      }
+    },
+    contactImagePath() {
+      if(this.$route.name !== 'contact') {
+        return imgContact
+      } else {
+        return imgContactActive
+      }
     }
   }
 }
@@ -21,38 +74,39 @@ export default {
 
 
 <style lang="scss" scoped>
+  @function responsiveSP($size) {
+    @return calc((#{$size} / 750) * 100vw);
+  }
+
   nav {
     position: sticky;
     top: 0;
     z-index: 1;
-    border-bottom: 1px solid #333;
+    height: responsiveSP(80);
+    margin-top: responsiveSP(-10);
   }
   ul {
     display: flex;
     justify-content: center;
+    height: 100%;
   }
   li {
     position: relative;
-    a {
-      display: inline-block;
-      padding: 20px 0;
-      font-weight: bold;
-    }
-    & + li {
-      padding-left: 40px;
+    +li {
       &::before {
         position: absolute;
-        left: 25px;
+        top: responsiveSP(-18);
         display: block;
         width: 1px;
-        height: 100%;
+        height: responsiveSP(115);
         background: #333;
         transform: rotate(45deg);
         content: '';
       }
     }
-  }
-  .nuxt-link-exact-active {
-    color: #000;
+    a {
+      display: inline-block;
+      line-height: responsiveSP(80);
+    }
   }
 </style>

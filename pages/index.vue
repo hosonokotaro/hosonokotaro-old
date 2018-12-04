@@ -4,9 +4,9 @@
       <div class="inner">
         <figure class="box-fig">
           <picture>
-            <source media="(min-width: 768px)" srcset="~/assets/img/pic_kitaku.png">
-            <source srcset="~/assets/img/pic_kitaku.png 2x">
-            <img src="~/assets/img/pic_kitaku.png" alt="北区">
+            <source media="(min-width: 768px)" srcset="/img/pic_kitaku.png">
+            <source srcset="/img/pic_kitaku.png 2x">
+            <img src="/img/pic_kitaku.png" alt="北区">
           </picture>
         </figure>
         <h2 class="txt-ttl">
@@ -48,7 +48,7 @@
 .area-fv {
   padding: 40px;
   text-align: center;
-  background: url(~/assets/img/pic_kitaku_bg.jpg) no-repeat;
+  background: url(/img/pic_kitaku_bg.jpg) no-repeat;
   background-size: cover;
   .box-fig {
   }
