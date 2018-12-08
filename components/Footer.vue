@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="txt">&copy;{{ years() }} HOSONO KOTARO</div>
+    <div class="copy--txt">&copy;{{ years() }} HOSONO KOTARO</div>
   </footer>
 </template>
 
@@ -18,10 +18,11 @@ export default {
 
 <style scoped>
   footer {
+    margin: 0 40px;
     padding: 20px 0;
     border-top: 1px solid #333;
   }
-  .txt {
+  .copy--txt {
     text-align: center;
     color: #000;
   }

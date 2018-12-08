@@ -2,7 +2,7 @@
 
 // foundation
 
-h1, h2, h3, h4, h5, h6, p, ul {
+h1, h2, h3, h4, h5, h6, p, ul, dl, dt, li, dd {
   margin-bottom: 0;
 }
 
@@ -13,7 +13,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #39f;
+  color: #ff0000;
 }
 
 img {
@@ -23,8 +23,9 @@ img {
 
 // utility
 
-.u-mark {
-  padding: 0.3em;
-  background: #333;
+.mark--box-gray {
+  margin-right: 5px;
+  padding: 0 5px;
+  background: #000;
   color: #fff;
 }

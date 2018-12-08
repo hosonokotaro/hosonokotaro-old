@@ -82,8 +82,9 @@ export default {
     position: sticky;
     top: 0;
     z-index: 1;
-    height: responsiveSP(80);
-    margin-top: responsiveSP(-10);
+    height: 40px;
+    margin: -5px 40px 0 40px;
+    border-bottom: 1px solid #000;
   }
   ul {
     display: flex;
@@ -95,10 +96,10 @@ export default {
     +li {
       &::before {
         position: absolute;
-        top: responsiveSP(-18);
+        top: -9px;
         display: block;
         width: 1px;
-        height: responsiveSP(115);
+        height: calc(115px / 2);
         background: #333;
         transform: rotate(45deg);
         content: '';
@@ -106,7 +107,7 @@ export default {
     }
     a {
       display: inline-block;
-      line-height: responsiveSP(80);
+      line-height: 40px;
     }
   }
 </style>
