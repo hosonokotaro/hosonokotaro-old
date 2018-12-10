@@ -1,11 +1,62 @@
-@import 'foundation';
-@import 'layout';
+@import 'reboot';
 
-.p-fv {
-    background: #444;
+// foundation
+
+h1, h2, h3, h4, h5, h6, p, ul, dl, dt, li, dd {
+  margin-bottom: 0;
 }
 
-.p-sect {
-    padding-bottom: 40px;
-    background: #f9f9f9;
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ff0000;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+// component
+
+.sect {
+  &--area {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 40px;
+    +.sect--area {
+      &::before {
+        display: block;
+        width: 100%;
+        height: 1px;
+        margin: 35px auto 35px auto;
+        background: #000;
+        content: '';
+      }
+    }
+    &-inner {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+  }
+  &--ttl {
+    line-height: 1;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+  }
+}
+
+// utility
+
+.mark--box-gray {
+  margin-right: 5px;
+  padding: 0 5px;
+  font-size: 14px;
+  background: #000;
+  color: #fff;
 }

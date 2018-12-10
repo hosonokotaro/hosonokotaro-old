@@ -1,6 +1,7 @@
 <template>
-  <div class="l-project">
+  <div class="p-project">
     <Header />
+    <Navi />
     <nuxt />
     <Footer />
   </div>
@@ -8,11 +9,13 @@
 
 <script>
 import Header from '~/components/Header.vue';
+import Navi from '~/components/Navi.vue';
 import Footer from '~/components/Footer.vue';
 
 export default {
   components: {
     Header,
+    Navi,
     Footer
   }
 }
