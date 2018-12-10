@@ -20,13 +20,13 @@
         </nuxt-link>
       </li>
       <li>
-        <a :href="mail">
+        <nuxt-link to="/contact">
           <picture>
             <source media="(min-width: 768px)" :srcset="contactImagePath">
             <source :srcset="contactImagePath + ' 2x'">
             <img :src="contactImagePath" alt="CONTACT">
           </picture>
-        </a>
+        </nuxt-link>
       </li>
     </ul>
   </nav>
@@ -43,7 +43,6 @@ const imgContactActive = require('~/assets/img/txt_nav_contact_active.png');
 export default {
   data() {
     return {
-      mail: 'mailto:hosono1985@gmail.com',
     }
   },
   computed: {

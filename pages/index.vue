@@ -30,25 +30,22 @@
           <li>
             <span class="mark--box-gray">Qiita</span><a href="https://qiita.com/hosono" target="_blank">https://qiita.com/hosono</a>
           </li>
+          <li>
+            <span class="mark--box-gray">note</span><a href="https://note.mu/hosonokotaro" target="_blank">https://note.mu/hosonokotaro</a>
+          </li>
         </ul>
-        <dl class="sect--list-rireki">
-          <dt>2018</dt>
-          <dd>大手ラジオ局企画のwebサイト</dd>
-          <dd>大手自動車メーカーLP多数</dd>
-          <dd>アニメーション制作会社ブランドページ</dd>
-          <dd>フリーランスとして独立</dd>
-          <dt>2017</dt>
-          <dd>大手ゲームプラットフォーム運営会社勤務</dd>
-        </dl>
       </div>
     </section>
     <section class="sect--area">
-      <h2>twitter</h2>
-      <div class="area-twitter">
-        <div class="wrap-twitter">
+      <div class="sect--area-inner">
+        <h2 class="sect--ttl">twitter</h2>
+        <div class="sect--area-twitter">
           <a class="twitter-timeline" data-lang="ja" data-height="667" data-theme="light" href="https://twitter.com/hosono_fe?ref_src=twsrc%5Etfw">Tweets by hosono_fe</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
+        <div class="sect--btn-twitter">
+          <a href="https://twitter.com/hosono_fe?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="ja" data-show-count="false">Follow @hosono_fe</a>
+        </div>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </section>
   </article>
@@ -56,19 +53,27 @@
 
 <style lang="scss" scoped>
 
-@function responsiveSP($size) {
-  @return calc((#{$size} / 750) * 100vw);
-}
-
 .fv {
   &--area {
-    padding: 20px 40px 45px 40px;
-    text-align: center;
-    background: url(/img/pic_kitaku_bg.jpg) center center no-repeat;
-    background-size: cover;
+    margin: 20px 40px 0 40px;
     &-inner {
+      position: relative;
       max-width: 768px;
       margin: 0 auto;
+      text-align: center;
+      background: url(/img/pic_kitaku_bg.jpg) top 30% center no-repeat;
+      background-size: cover;
+      &::before {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #ccc;
+        transform: skew(5deg);
+        content: '';
+      }
     }
     &--fig-bg {
       margin: 0;
@@ -102,67 +107,33 @@
 
 .sect {
   &--area {
-    margin: 0 auto;
-    padding: 0 40px;
-    &-inner {
-      max-width: 768px;
-      margin: 0 auto;
+    &-twitter {
+      padding: 5px;
+      background: #f1f1f1;
+      +.sect--btn-twitter {
+        margin-top: 20px;
+      }
     }
   }
   &--ttl {
-    line-height: 1;
-    font-size: 32px;
-    font-style: italic;
     & + .sect--list-link {
       padding-top: 25px;
+    }
+    & + .sect--area-twitter {
+      margin-top: 25px;
     }
   }
   &--list {
     &-link {
-      +.sect--list-rireki {
-        padding-top: 15px;
-      }
+      line-height: 24px;
     }
-    &-rireki {
-      dt {
-        line-height: 1;
-        font-size: 24px;
-        font-weight: normal;
-        + dd {
-          padding-top: 15px;
-        }
-      }
-      dd {
-        line-height: 1;
-        font-size: 14px;
-        + dd {
-          padding-top: 10px;
-        }
-        + dt {
-          padding-top: 15px;
-        }
-      }
+  }
+  &--btn {
+    &-twitter {
     }
   }
 }
 
-// p {
-//   padding: 0 40px;
-// }
-
-// h3 {
-//   & + p {
-//     padding-top: 20px;
-//   }
-// }
-
-// .area-twitter {
-//   padding: 0 40px;
-//   text-align: center;
-// }
-
-// .wrap-twitter {
-// }
 </style>
 
 <script>
