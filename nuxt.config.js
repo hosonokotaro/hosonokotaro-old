@@ -1,17 +1,23 @@
+const title = 'WEB DEVELOPER HOSONO KOTARO';
+const description = '都内で活動するフロントエンドエンジニア、細野 広太郎です。仕事・その他活動の履歴を掲載しています';
+const url = 'https://hosonokotaro.jp';
+
 module.exports = {
   /*
   ** Headers of the page
   */
   head: {
-    title: 'WEB DEVELOPER >> HOSONO KOTARO',
+    title: title,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '都内で活動するフロントエンドエンジニア、細野 広太郎です。仕事の履歴や活動履歴を掲載しています' },
+      { hid: 'description', name: 'description', content: description },
       { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: 'WEB DEVELOPER >> HOSONO KOTARO' },
-      { property: 'og:description', content: '都内で活動するフロントエンドエンジニア、細野 広太郎です。仕事の履歴や活動履歴を掲載しています' },
-      { property: 'twitter:card', content: 'summary' }
+      { property: 'og:title', content: title },
+      { property: 'og:description', content: description },
+      { property: 'og:url', content: url },
+      { property: 'og:image', content: url + '/img/og.png' },
+      { name: 'twitter:card', content: 'summary' }
     ],
     link: [
     ],
