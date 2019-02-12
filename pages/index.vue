@@ -28,6 +28,9 @@
         <h2 class="sect--ttl">Speak</h2>
         <ul class="sect--list-link">
           <li>
+            <span class="mark--box-gray">GitHub</span><a href="https://github.com/hosonokotaro/" target="_blank">https://github.com/hosonokotaro/</a>
+          </li>
+          <li>
             <span class="mark--box-gray">Qiita</span><a href="https://qiita.com/hosono" target="_blank">https://qiita.com/hosono</a>
           </li>
           <li>

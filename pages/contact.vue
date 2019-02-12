@@ -19,7 +19,7 @@
           <br>
           大手企業などのサイトを受託案件として多数手がける。個人としては、アニメーション制作会社、個人経営の本屋さんのサイトも手がける。<br>
           <br>
-          座右の銘は「<ruby>色即是空<rt>しきそくぜくう</rt></ruby>」<br>
+          好きな言葉は「<ruby>色即是空<rt>しきそくぜくう</rt></ruby>」<br>
           <br>
           <a :href="mail"><img class="my--pic-mail" src="~/assets/img/pic_mail.png" alt="Mail"></a>
         </p>
