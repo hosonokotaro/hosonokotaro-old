@@ -22,7 +22,7 @@
 
 .sect {
   &--area {
-    padding-top: 25px;
+    padding-top: 40px;
   }
   &--ttl {
     +.sect--list-rireki {

@@ -42,7 +42,7 @@ export default {
 
 .sect {
   &--area {
-    padding-top: 25px;
+    padding-top: 40px;
   }
   &--ttl {
     &-my {
