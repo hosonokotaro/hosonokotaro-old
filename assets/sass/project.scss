@@ -2,6 +2,10 @@
 
 // foundation
 
+body {
+  word-break: break-all;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, dl, dt, li, dd {
   margin-bottom: 0;
 }
@@ -59,4 +63,23 @@ img {
   font-size: 14px;
   background: #000;
   color: #fff;
+}
+
+.page {
+  &-enter-active {
+    transition: all 0.4s ease;
+  }
+  &-leave-active {
+    transition: all 0.4s ease;
+  }
+  &-enter {
+    transform-origin: top center;
+    transform: scale(1.9) rotate(15deg);
+    letter-spacing: 3em;
+  }
+  &-leave-active {
+    transform-origin: top center;
+    transform: scale(0.1) rotate(-15deg);
+    letter-spacing: 3em;
+  }
 }

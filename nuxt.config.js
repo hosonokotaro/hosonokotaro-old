@@ -33,6 +33,9 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#0096ff' },
+  transition: {
+    name: 'page'
+  },
   /*
   ** Build configuration
   */

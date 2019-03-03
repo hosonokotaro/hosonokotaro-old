@@ -58,7 +58,7 @@
 
 .fv {
   &--area {
-    margin: 20px 40px 0 40px;
+    margin: 40px 40px 0 40px;
     &-inner {
       position: relative;
       max-width: 768px;
@@ -73,7 +73,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        background: #ccc;
+        background: #eee;
         transform: skew(5deg);
         content: '';
       }
