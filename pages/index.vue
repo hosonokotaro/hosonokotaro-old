@@ -43,7 +43,7 @@
       <div class="sect--area-inner">
         <h2 class="sect--ttl">twitter</h2>
         <div class="sect--area-twitter">
-          <a class="twitter-timeline" data-lang="ja" data-height="667" data-theme="light" href="https://twitter.com/hosono_fe?ref_src=twsrc%5Etfw">Tweets by hosono_fe</a>
+          <a class="twitter-timeline" data-lang="ja" data-height="667" data-theme="light" data-tweet-limit="5" href="https://twitter.com/hosono_fe?ref_src=twsrc%5Etfw">Tweets by hosono_fe</a>
         </div>
         <div class="sect--btn-twitter">
           <a href="https://twitter.com/hosono_fe?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="ja" data-show-count="false">Follow @hosono_fe</a>

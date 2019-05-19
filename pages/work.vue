@@ -4,7 +4,7 @@
       <div class="sect--area-inner">
         <h2 class="sect--ttl">Work</h2>
         <dl class="sect--list-rireki">
-          <dt>2018</dt>
+          <dt>2018 - 2019</dt>
           <dd>大手ラジオ局企画のwebサイト</dd>
           <dd>大手自動車メーカーLP多数</dd>
           <dd>アニメーション制作会社ブランドページ</dd>
