@@ -9,7 +9,6 @@
             <source srcset="/img/pic_hosono.jpg 2x">
             <img src="/img/pic_hosono.jpg" alt="細野">
           </picture>
-          <figcaption class="sect--txt-my">とても眩しいですし。</figcaption>
         </figure>
         <h3 class="sect--ttl-my">HOSONO KOTARO</h3>
         <p class="my--txt-detail"><ruby>細野 広太郎<rt>ほその こうたろう</rt></ruby><br>
