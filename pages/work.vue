@@ -1,19 +1,19 @@
 <template>
   <article>
-    <section class="sect--area">
-      <div class="sect--area-inner">
-        <h2 class="sect--ttl">Work</h2>
-        <dl class="sect--list-rireki">
-          <dt>2019</dt>
-          <dd>大手金融会社にてサイト改修</dd>
-          <dt>2018</dt>
-          <dd>大手ラジオ局企画のwebサイト</dd>
-          <dd>大手自動車メーカーLP多数</dd>
-          <dd>アニメーション制作会社ブランドページ</dd>
-          <dd>フリーランスとして独立</dd>
-          <dt>2017</dt>
-          <dd>地元、赤羽の絵本屋さんの<a href="http://aoneko-shobou.jp/" target="_blank">webサイト</a>制作</dd>
-          <dd>大手ゲームプラットフォーム運営会社勤務</dd>
+    <section class="sect">
+      <div class="sect__inner">
+        <h2 class="sect__ttl">Work</h2>
+        <dl class="sect__list">
+          <dt class="sect__list-ttl">2019</dt>
+          <dd class="sect__list-detail">大手金融会社にてサイト改修</dd>
+          <dt class="sect__list-ttl">2018</dt>
+          <dd class="sect__list-detail">大手ラジオ局企画のwebサイト</dd>
+          <dd class="sect__list-detail">大手自動車メーカーLP多数</dd>
+          <dd class="sect__list-detail">アニメーション制作会社ブランドページ</dd>
+          <dd class="sect__list-detail">フリーランスとして独立</dd>
+          <dt class="sect__list-ttl">2017</dt>
+          <dd class="sect__list-detail">地元、赤羽の絵本屋さんの<a href="http://aoneko-shobou.jp/" target="_blank">webサイト</a>制作</dd>
+          <dd class="sect__list-detail">大手ゲームプラットフォーム運営会社勤務</dd>
         </dl>
       </div>
     </section>
@@ -23,34 +23,30 @@
 <style lang="scss" scoped>
 
 .sect {
-  &--area {
+  &__inner {
     padding-top: 40px;
   }
-  &--ttl {
-    +.sect--list-rireki {
+  &__ttl {
+    +.sect__list {
       padding-top: 15px;
     }
   }
-  &--list {
-    &-rireki {
-      dt {
-        line-height: 1;
-        font-size: 24px;
-        font-weight: normal;
-        + dd {
-          padding-top: 15px;
-        }
-      }
-      dd {
-        line-height: 1;
-        font-size: 14px;
-        + dd {
-          padding-top: 10px;
-        }
-        + dt {
-          padding-top: 25px;
-        }
-      }
+  &__list-ttl {
+    line-height: 1;
+    font-size: 24px;
+    font-weight: normal;
+    +.sect__list-detail {
+      padding-top: 15px;
+    }
+  }
+  &__list-detail {
+    line-height: 1;
+    font-size: 14px;
+    +.sect__list-detail {
+      padding-top: 10px;
+    }
+    +.sect__list-ttl {
+      padding-top: 25px;
     }
   }
 }

@@ -1,9 +1,9 @@
 <template>
   <article>
-    <div class="sect--area">
-      <h2 v-if="error.statusCode === 404" class="sect--ttl">404 NOT FOUND</h2>
-      <h2 v-else class="sect--ttl">ERROR</h2>
-      <div class="sect--link">
+    <div class="sect">
+      <h2 v-if="error.statusCode === 404" class="sect__ttl">404 NOT FOUND</h2>
+      <h2 v-else class="sect__ttl">ERROR</h2>
+      <div class="sect__link">
         <nuxt-link to="/">BACK TO /</nuxt-link>
       </div>
     </div>
@@ -16,14 +16,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .sect {
-    &--area {
-      padding-top: 25px;
-    }
-    &--ttl {
-      +.sect--link {
-        padding-top: 15px;
-      }
-    }
-  }
+.sect__link {
+  padding-top: 15px;
+}
 </style>

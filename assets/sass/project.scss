@@ -2,10 +2,6 @@
 
 // foundation
 
-body {
-  word-break: break-all;
-}
-
 h1, h2, h3, h4, h5, h6, p, ul, dl, dt, li, dd {
   margin-bottom: 0;
 }
@@ -28,26 +24,24 @@ img {
 // component
 
 .sect {
-  &--area {
-    position: relative;
-    margin: 0 auto;
-    padding: 0 40px;
-    +.sect--area {
-      &::before {
-        display: block;
-        width: 100%;
-        height: 1px;
-        margin: 35px auto 35px auto;
-        background: #000;
-        content: '';
-      }
-    }
-    &-inner {
-      max-width: 768px;
-      margin: 0 auto;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 40px;
+  +.sect {
+    &::before {
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin: 35px auto 35px auto;
+      background: #000;
+      content: '';
     }
   }
-  &--ttl {
+  &__inner {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  &__ttl {
     line-height: 1;
     font-size: 32px;
     font-weight: normal;
@@ -57,7 +51,7 @@ img {
 
 // utility
 
-.mark--box-gray {
+.mark__box-gray {
   margin-right: 5px;
   padding: 0 5px;
   font-size: 14px;
