@@ -1,6 +1,6 @@
 <template>
-  <footer>
-    <div class="copy--txt">&copy;{{ years() }} HOSONO KOTARO</div>
+  <footer class="footer">
+    <div class="footer__copyright">&copy;{{ years() }} HOSONO KOTARO</div>
   </footer>
 </template>
 
@@ -16,14 +16,15 @@ export default {
 </script>
 
 
-<style scoped>
-  footer {
-    margin: 40px 40px 0 40px;
-    padding: 20px 0;
-    border-top: 1px solid #333;
-  }
-  .copy--txt {
+<style lang="scss" scoped>
+.footer {
+  margin: 40px 40px 0 40px;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+
+  &__copyright {
     text-align: center;
     color: #000;
   }
+}
 </style>
