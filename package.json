@@ -15,7 +15,6 @@
     "deploy": "firebase deploy"
   },
   "dependencies": {
-    "g": "^2.0.1",
     "node-gyp": "^6.1.0",
     "nuxt": "^1.4.2"
   },
