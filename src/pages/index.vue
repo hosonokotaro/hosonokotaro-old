@@ -23,37 +23,10 @@
         </p>
       </div>
     </div>
-    <section class="sect">
-      <div class="sect__inner">
-        <h2 class="sect__ttl">Speak</h2>
-        <ul class="sect__list-link">
-          <li>
-            <span class="mark__box-gray">GitHub</span><a href="https://github.com/hosonokotaro/" target="_blank">https://github.com/hosonokotaro/</a>
-          </li>
-          <li>
-            <span class="mark__box-gray">Qiita</span><a href="https://qiita.com/hosono" target="_blank">https://qiita.com/hosono</a>
-          </li>
-          <li>
-            <span class="mark__box-gray">note</span><a href="https://note.mu/hosonokotaro" target="_blank">https://note.mu/hosonokotaro</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="sect">
-      <div class="sect__inner">
-        <h2 class="sect__ttl">twitter</h2>
-        <div class="twitter">
-          <a class="twitter-timeline" data-lang="ja" data-height="667" data-theme="light" data-tweet-limit="5" href="https://twitter.com/hosono_fe?ref_src=twsrc%5Etfw">Tweets by hosono_fe</a>
-        </div>
-        <div class="twitter__btn">
-          <a href="https://twitter.com/hosono_fe?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="ja" data-show-count="false">Follow @hosono_fe</a>
-        </div>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-    </section>
   </article>
 </template>
 
+<script>
 <style lang="scss" scoped>
 .fv {
   margin: 40px 40px 0 40px;
@@ -134,7 +107,3 @@
 }
 
 </style>
-
-<script>
-export default {};
-</script>
