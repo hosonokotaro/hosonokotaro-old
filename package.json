@@ -15,8 +15,8 @@
     "deploy": "firebase deploy"
   },
   "dependencies": {
-    "node-gyp": "^6.1.0",
-    "nuxt": "^1.4.2"
+    "node-sass": "^4.13.1",
+    "nuxt": "^2.11.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
@@ -24,8 +24,6 @@
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
-    "gsap": "^2.0.2",
-    "node-sass": "^4.13.1",
     "sass-loader": "^7.1.0"
   }
 }
