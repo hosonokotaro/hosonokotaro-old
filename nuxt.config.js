@@ -26,6 +26,7 @@ module.exports = {
       { src: '/__/firebase/init.js', body: true }
     ],
   },
+  srcDir: 'src/',
   css: [
     '@/assets/sass/project.scss'
   ],

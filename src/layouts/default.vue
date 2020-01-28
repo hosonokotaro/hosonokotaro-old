@@ -1,5 +1,5 @@
 <template>
-  <div class="p-project">
+  <div>
     <Header />
     <Navi />
     <nuxt />
