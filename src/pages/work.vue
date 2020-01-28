@@ -31,7 +31,6 @@ export default {
 <style lang="scss" scoped>
 
 .sect {
-  padding-top: 40px;
   &__ttl {
     +.sect__list {
       padding-top: 15px;

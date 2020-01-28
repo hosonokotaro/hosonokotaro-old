@@ -42,8 +42,6 @@ export default {
 
 <style lang="scss" scoped>
 .sect {
-  padding-top: 40px;
-
   &__ttl {
     +.sect__pic {
       padding-top: 20px;
