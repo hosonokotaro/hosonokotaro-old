@@ -63,9 +63,7 @@ export default {
 <style lang="scss" scoped>
 .fv {
   margin: 40px 40px 0 40px;
-  +.sect {
-    padding-top: 35px;
-  }
+
   &__inner {
     position: relative;
     max-width: 768px;
