@@ -24,7 +24,9 @@
       </div>
     </div>
     <SectInner>
-      <h2 class="sect__ttl">Speak</h2>
+      <h2 class="sect__ttl">
+        Speak
+      </h2>
       <ul class="sect__list-link">
         <li>
           <span class="mark__box-gray">GitHub</span><a href="https://github.com/hosonokotaro/" target="_blank">https://github.com/hosonokotaro/</a>
@@ -38,20 +40,31 @@
       </ul>
     </SectInner>
     <SectInner>
-      <h2 class="sect__ttl">twitter</h2>
+      <h2 class="sect__ttl">
+        twitter
+      </h2>
       <div class="twitter">
-        <a class="twitter-timeline" data-lang="ja" data-height="667" data-theme="light" data-tweet-limit="5" href="https://twitter.com/hosono_fe?ref_src=twsrc%5Etfw">Tweets by hosono_fe</a>
+        <a
+          class="twitter-timeline"
+          data-lang="ja"
+          data-height="667"
+          data-theme="light"
+          data-tweet-limit="5"
+          href="https://twitter.com/hosono_fe?ref_src=twsrc%5Etfw"
+        >
+          Tweets by hosono_fe
+        </a>
       </div>
       <div class="twitter__btn">
         <a href="https://twitter.com/hosono_fe?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="ja" data-show-count="false">Follow @hosono_fe</a>
       </div>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
     </SectInner>
   </article>
 </template>
 
-<script>
-import SectInner from '~/components/Sect.vue';
+<script lang="ts">
+import SectInner from '~/components/Sect.vue'
 
 export default {
   components: {
