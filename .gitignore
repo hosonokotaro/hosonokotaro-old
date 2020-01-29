@@ -1,6 +1,6 @@
 node_modules
 dist
 firebase-debug.log
-package-lock.json
 .DS_Store
 .nuxt
+yarn-error.log
