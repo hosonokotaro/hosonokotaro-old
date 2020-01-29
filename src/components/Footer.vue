@@ -1,20 +1,22 @@
 <template>
   <footer class="footer">
-    <div class="footer__copyright">&copy;{{ years() }} HOSONO KOTARO</div>
+    <div class="footer__copyright">
+      &copy;{{ fullYear() }} HOSONO KOTARO
+    </div>
   </footer>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
   methods: {
-    years() {
-      let date = new Date();
-      return date.getFullYear();
+    fullYear (): number {
+      return new Date().getFullYear()
     }
   }
-}
-</script>
-
+})
+</script>>
 
 <style lang="scss" scoped>
 .footer {

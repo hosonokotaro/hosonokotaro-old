@@ -32,45 +32,45 @@
   </nav>
 </template>
 
-<script>
-const imgTop = require('~/assets/img/txt_nav_top.png');
-const imgTopActive = require('~/assets/img/txt_nav_top_active.png');
-const imgWork = require('~/assets/img/txt_nav_work.png');
-const imgWorkActive = require('~/assets/img/txt_nav_work_active.png');
-const imgContact = require('~/assets/img/txt_nav_contact.png');
-const imgContactActive = require('~/assets/img/txt_nav_contact_active.png');
+<script lang="ts">
 
-export default {
-  data() {
-    return {
+import { Vue, Component } from 'vue-property-decorator'
+
+const imgTop = require('~/assets/img/txt_nav_top.png')
+const imgTopActive = require('~/assets/img/txt_nav_top_active.png')
+const imgWork = require('~/assets/img/txt_nav_work.png')
+const imgWorkActive = require('~/assets/img/txt_nav_work_active.png')
+const imgContact = require('~/assets/img/txt_nav_contact.png')
+const imgContactActive = require('~/assets/img/txt_nav_contact_active.png')
+
+@Component
+export default class Navi extends Vue {
+  get topImagePath () {
+    if (this.$route.name !== 'index') {
+      return imgTop
     }
-  },
-  computed: {
-    topImagePath() {
-      if(this.$route.name !== 'index') {
-        return imgTop
-      } else {
-        return imgTopActive
-      }
-    },
-    workImagePath() {
-      if(this.$route.name !== 'work') {
-        return imgWork
-      } else {
-        return imgWorkActive
-      }
-    },
-    contactImagePath() {
-      if(this.$route.name !== 'contact') {
-        return imgContact
-      } else {
-        return imgContactActive
-      }
+
+    return imgTopActive
+  }
+
+  get workImagePath () {
+    if (this.$route.name !== 'work') {
+      return imgWork
     }
+
+    return imgWorkActive
+  }
+
+  get contactImagePath () {
+    if (this.$route.name !== 'contact') {
+      return imgContact
+    }
+
+    return imgContactActive
   }
 }
-</script>
 
+</script>
 
 <style lang="scss" scoped>
 @function responsiveSP($size) {

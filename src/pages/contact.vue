@@ -1,7 +1,9 @@
 <template>
   <article>
     <SectInner>
-      <h2 class="sect__ttl">Contact</h2>
+      <h2 class="sect__ttl">
+        Contact
+      </h2>
       <figure class="sect__pic">
         <picture>
           <source media="(min-width: 768px)" srcset="/img/pic_hosono.jpg">
@@ -9,8 +11,11 @@
           <img src="/img/pic_hosono.jpg" alt="細野" class="sect__pic-img">
         </picture>
       </figure>
-      <h3 class="sect__ttl-name">HOSONO KOTARO</h3>
-      <p class="sect__txt-detail"><ruby>細野 広太郎<rt>ほその こうたろう</rt></ruby><br>
+      <h3 class="sect__ttl-name">
+        HOSONO KOTARO
+      </h3>
+      <p class="sect__txt-detail">
+        <ruby>細野 広太郎<rt>ほその こうたろう</rt></ruby><br>
         1985年生まれ<br>
         <br>
         東京でフロントエンドエンジニアとして、ミレニアル世代のフリーランスとして活動している。<br>
@@ -25,18 +30,18 @@
   </article>
 </template>
 
-<script>
-import SectInner from '~/components/Sect.vue';
+<script lang="ts">
+import SectInner from '~/components/Sect.vue'
 
 export default {
   components: {
     SectInner
   },
-  data() {
+  data () {
     return {
-      mail: 'mailto:hosono1985@gmail.com',
+      mail: 'mailto:hosono1985@gmail.com'
     }
-  },
+  }
 }
 </script>
 
