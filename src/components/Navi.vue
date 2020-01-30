@@ -36,12 +36,12 @@
 
 import { Vue, Component } from 'vue-property-decorator'
 
-const imgTop = require('~/assets/img/txt_nav_top.png')
-const imgTopActive = require('~/assets/img/txt_nav_top_active.png')
-const imgWork = require('~/assets/img/txt_nav_work.png')
-const imgWorkActive = require('~/assets/img/txt_nav_work_active.png')
-const imgContact = require('~/assets/img/txt_nav_contact.png')
-const imgContactActive = require('~/assets/img/txt_nav_contact_active.png')
+const imgTop: HTMLImageElement = require('~/assets/img/txt_nav_top.png')
+const imgTopActive: HTMLImageElement = require('~/assets/img/txt_nav_top_active.png')
+const imgWork: HTMLImageElement = require('~/assets/img/txt_nav_work.png')
+const imgWorkActive: HTMLImageElement = require('~/assets/img/txt_nav_work_active.png')
+const imgContact: HTMLImageElement = require('~/assets/img/txt_nav_contact.png')
+const imgContactActive: HTMLImageElement = require('~/assets/img/txt_nav_contact_active.png')
 
 @Component
 export default class Navi extends Vue {
