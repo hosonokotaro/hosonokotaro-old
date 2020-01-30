@@ -101,7 +101,6 @@ export default {
   }
   &__txt-ttl {
     padding-top: 20px;
-    line-height: 1;
     +.fv__txt-caption {
       padding-top: 30px;
     }
@@ -109,7 +108,7 @@ export default {
   &__txt-caption {
     margin: 0 auto;
     line-height: 1.8;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #fff;
   }
   &__txt-line {
@@ -131,11 +130,6 @@ export default {
 
 .sect {
   &__ttl {
-    line-height: 1;
-    font-size: 32px;
-    font-weight: 400;
-    font-style: italic;
-
     & + .sect__list-link {
       padding-top: 25px;
     }
@@ -146,7 +140,8 @@ export default {
   }
 
   &__list-link {
-    line-height: 24px;
+    line-height: 1.8;
+    font-size: 1.4rem;
   }
 }
 

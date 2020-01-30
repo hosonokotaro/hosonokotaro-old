@@ -55,7 +55,7 @@ export default {
 
   &__ttl-name {
     line-height: 1;
-    font-size: 18px;
+    font-size: 1.8rem;
     text-align: center;
     +.sect__txt-detail {
       padding-top: 30px;
@@ -92,7 +92,7 @@ export default {
     top: 20%;
     right: -10%;
     padding: 5px;
-    font-size: 10px;
+    font-size: 1rem;
     transform: rotate(20deg);
     background: #fcfcfc;
     &::after {
@@ -107,8 +107,7 @@ export default {
       transform: rotate(45deg);
     }
     &-detail {
-      line-height: 23px;
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 }

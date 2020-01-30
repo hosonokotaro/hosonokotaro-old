@@ -2,6 +2,15 @@
 
 // foundation
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-wrap: break-word;
+  font-size: 1rem;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, dl, dt, li, dd {
   margin-bottom: 0;
 }
@@ -26,7 +35,6 @@ img {
 .mark__box-gray {
   margin-right: 5px;
   padding: 0 5px;
-  font-size: 14px;
   background: #000;
   color: #fff;
 }

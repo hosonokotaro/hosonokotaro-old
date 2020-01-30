@@ -25,6 +25,7 @@ export default Vue.extend({
   border-top: 1px solid #333;
 
   &__copyright {
+    font-size: 1.2rem;
     text-align: center;
     color: #000;
   }

@@ -27,7 +27,7 @@
   }
   &__ttl {
     line-height: 1;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: normal;
     font-style: italic;
   }
