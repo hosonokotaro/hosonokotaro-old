@@ -60,7 +60,7 @@ export default {
   }
   &__list-ttl {
     line-height: 1;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: normal;
     +.sect__list-detail {
       padding-top: 15px;
@@ -68,7 +68,7 @@ export default {
   }
   &__list-detail {
     line-height: 1;
-    font-size: 14px;
+    font-size: 1.4rem;
     +.sect__list-detail {
       padding-top: 10px;
     }

@@ -107,6 +107,6 @@ export default class Navi extends Vue {
 }
 .navi__link {
   display: inline-block;
-  line-height: 40px;
+  line-height: 4;
 }
 </style>
